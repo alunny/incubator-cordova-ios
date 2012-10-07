@@ -245,6 +245,15 @@
         }
     }
 
+    // enable/disable Data Detector (turning phone numbers into links)
+    // defaults to Enabled (as UIWebView does)
+    NSNumber* dataDetector = [self.settings objectForKey:@"DataDetectorEnabled"];
+    BOOL detectData = (dataDetector==nil || [dataDetector boolValue]);
+
+    if (!detectData) {
+        self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
+    }
+
     /*
      * iOS 6.0 UIWebView properties
      */

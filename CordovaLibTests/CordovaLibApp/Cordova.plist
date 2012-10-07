@@ -8,6 +8,8 @@
 	<false/>
 	<key>UIWebViewBounce</key>
 	<true/>
+	<key>DataDetectorEnabled</key>
+	<true/>
 	<key>TopActivityIndicator</key>
 	<string>gray</string>
 	<key>EnableLocation</key>
